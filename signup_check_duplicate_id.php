@@ -24,7 +24,7 @@
                     echo("<li>아이디를 입력해주세요!</li>");
                 } else {
                     $connect = mysqli_connect("localhost", "user1", "12345", "vegan_mall");
-                    $sql = "select * from users where id='$id'";
+                    $sql = "select * from users where username='$id'";
                     $result = mysqli_query($connect, $sql);
                     // 값을 가지면 db에 동일한 아이디가 존재
                     $record_num = mysqli_num_rows($result);
