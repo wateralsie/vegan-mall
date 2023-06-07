@@ -24,7 +24,7 @@
     $content = htmlspecialchars($content, ENT_QUOTES);
 
     // 현재의 '년-월-일-시-분'을 저장
-    $created_at = date("Y-m-d (H:i)");  
+    $created_at = date("Y-m-d H:i");  
 
     $upload_dir = './data/';
 
