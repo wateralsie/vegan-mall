@@ -59,15 +59,15 @@
 
         // 업로드된 파일을 ./data 폴더에 저장
         // 오류가 발생하면 경고창 띄우고 이전 페이지로 이동
-        // if (!move_uploaded_file($upload_file_tmp_name, $uploaded_file)) {
-        //     echo ("
-        //             <script>
-        //                 alert('파일을 지정한 디렉토리에 복사하는데 실패했습니다.');
-        //                 history.go(-1)
-        //             </script>
-        //         ");
-        //     exit;
-        // }
+        if (!move_uploaded_file($upload_file_tmp_name, $uploaded_file)) {
+            echo ("
+                    <script>
+                        alert('파일을 지정한 디렉토리에 복사하는데 실패했습니다.');
+                        history.go(-1)
+                    </script>
+                ");
+            exit;
+        }
     } else {
         $upload_file_name = "";
         $upload_file_type = "";
