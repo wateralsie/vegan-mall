@@ -12,8 +12,8 @@
 
     $connect = mysqli_connect("localhost", "user1", "12345", "vegan_mall");
 
-    $sql = "insert into users(username, password, name, email, created_at) ";
-    $sql .= "values('$id', '$pw', '$name', '$email', '$created_at')";
+    $sql = "insert into users(username, password, name, email, created_at, level) ";
+    $sql .= "values('$id', '$pw', '$name', '$email', '$created_at', 1)";
 
     mysqli_query($connect, $sql);
     mysqli_close($connect);

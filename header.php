@@ -5,6 +5,8 @@
     else $user_id = "";
     if (isset($_SESSION["user_name"])) $user_name = $_SESSION["user_name"];
     else $user_name = "";
+    if (isset($_SESSION["user_level"])) $user_level = $_SESSION["user_level"];
+    else $user_level = "";
 ?>
 
 <div id="top">
