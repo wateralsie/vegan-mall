@@ -106,16 +106,15 @@
                 ?>
             </ul>
             <ul class="buttons">
-                <li><button onclick="location.href='help_list.php'">목록</button></li>
                 <li>
                     <?php
-                    if ($userid) {
+                    if ($user_id) {
                     ?>
-                        <button onclick="location.href='help.php'">글쓰기</button>
+                        <button onclick="location.href='help.php'">문의하기</button>
                     <?php
                     } else {
                     ?>
-                        <a href="javascript:alert('로그인 후 이용해 주세요!')"><button>글쓰기</button></a>
+                        <a href="javascript:alert('로그인 후 이용해 주세요!')"><button>문의하기</button></a>
                     <?php
                     }
                     ?>
