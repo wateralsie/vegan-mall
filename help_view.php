@@ -52,11 +52,11 @@
                     <?php
                     if ($file_name) {
                         $real_name = $file_copied;
-                        $file_path = "./data/" . $real_name;
+                        $file_path = "./data/".$real_name;
                         $file_size = filesize($file_path);
 
                         echo "▷ 첨부파일 : $file_name ($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;
-			       		<a href='download.php?help_id=$help_id&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
+			       		<a href='help_download.php?help_id=$help_id&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
                     }
                     ?>
                     <?= $content ?>
