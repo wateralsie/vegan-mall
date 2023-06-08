@@ -77,7 +77,7 @@
                 <?php
                     $number--;
                 }
-                mysqli_close($conect);
+                mysqli_close($connect);
 
                 ?>
             </ul>
@@ -111,7 +111,7 @@
                     <?php
                     if ($userid) {
                     ?>
-                        <button onclick="location.href='help_form.php'">글쓰기</button>
+                        <button onclick="location.href='help.php'">글쓰기</button>
                     <?php
                     } else {
                     ?>
