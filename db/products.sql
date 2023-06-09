@@ -1,5 +1,5 @@
 create table products (
-    products_id int not null auto_increment,
+    product_id int not null auto_increment,
     name char(100) not null,
     price int not null,
     brand char(50) not null,
@@ -7,5 +7,5 @@ create table products (
     content text not null,
     rank int,
     is_in_cart boolean,
-    primary key(products_id)
+    primary key(product_id)
 );
