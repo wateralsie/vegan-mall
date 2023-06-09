@@ -36,10 +36,11 @@
   </div>
   <div id="products_list">
   <?php
-    if (isset($_GET["category"]))
+    if (isset($_GET["category"])) {
       $category = $_GET["category"];
-    else
+    } else {
       $category = '화장품';
+    }
 
     $connect = mysqli_connect("localhost", "user1", "12345", "vegan_mall");
     $sql = "select * from products where category=$category";
