@@ -55,7 +55,7 @@
       // 하나의 레코드 가져오기
       $product_id = $row["product_id"];
       $name = $row["name"];
-      $price = $row["price"];
+      $price = number_format($row["price"])."원";
       $brand = $row["brand"];
       $content_link = $row["content"];
 
