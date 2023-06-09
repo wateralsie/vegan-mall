@@ -16,9 +16,6 @@
         <?php include "header.php"; ?>
     </header>
     <section>
-        <div id="main_img_bar">
-            <img src="./image/main_img.png">
-        </div>
         <div id="board_box">
             <h3 class="title">
                 고객센터 > 내용보기
