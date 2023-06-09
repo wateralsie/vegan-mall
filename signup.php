@@ -14,9 +14,6 @@
                 <?php include "header.php"; ?>
             </header>
             <section>
-                <div id="main_img_bar">
-                    <img src="./image/main_img.png">
-                </div>
                 <div id="main_content">
                     <div id="join_box">
                     <form name="signup" action="signup_insert_user.php" method="post">
@@ -64,8 +61,6 @@
                                 <input type="text" name="email_id">@<input type="text" name="email_domain">
                             </div>
                         </div>
-
-                        <div class="bottom_line"></div>
 
                         <!-- 확인, 취소 버튼 -->
                         <div class="buttons">

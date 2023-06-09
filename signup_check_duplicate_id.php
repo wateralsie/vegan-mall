@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <style>
             h3 {
                 padding-left: 5px;
