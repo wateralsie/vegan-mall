@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <?php
     $id = $_POST["id"];
     $pw = $_POST["pw"];
