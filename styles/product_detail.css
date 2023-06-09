@@ -1,0 +1,8 @@
+#product_detail_box {
+    display: flex;
+    align-items: center;
+}
+
+#buttons {
+    margin-left: 30px;
+}
