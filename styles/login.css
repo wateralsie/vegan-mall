@@ -1,0 +1,15 @@
+section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 60%;
+    margin-top: 8%;
+}
+
+#login_title {
+    display: flex;
+    justify-content: center;
+}
+
+#login_input { margin-top: 10%; }
+#login_btn { margin-top: 10%; }
