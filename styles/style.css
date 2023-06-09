@@ -2,5 +2,44 @@
 
 * {
 	font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+    color: #242926;
     padding: 0; margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* 헤더 */
+#top {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+#top h3 { position: absolute; top: 25px; left: 40px; font-size: 16px; }
+#top h3 img { margin-left: 50px; }
+#top #menu { float: right; margin-right: 100px; margin-top: 40px; }
+#top #menu img { float: left; margin-left: 36px; }
+
+#nav_bar {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-weight: bold;
+    font-size: medium;
+    border-top: 1px solid #dedede;
+    padding-left: 152px;
+    padding-right: 152px;
+}
+#nav_bar ul { display: flex; align-items: center; }
+#nav_bar li { list-style-type: none; }
+#nav_bar #category { padding-right: 10px; height: 100%; }
+#nav_bar #category li { margin-right: 10px; }
+#nav_bar #category li img { margin-top: 4px; }
+#nav_bar #sale_menu li { padding-left: 30px; padding-right: 30px; }
+#nav_bar #user_menu { align-items: end; margin-right: 10px; font-weight: 400; }
+#nav_bar #user_menu li { padding-left: 16px; }

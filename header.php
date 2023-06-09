@@ -14,22 +14,24 @@
         <a href="home.php"><img src="./image/logo.png" width="150px"></a>
         <img src="./image/search_bar.png" >
     </h3>
-    
-    <ul id="top_menu">
-        <img src="./image/user.png" width="28px">
-        <img src="./image/shopping_bag.png" width="30px">
-    </ul>
+    <div id="menu"> 
+        <img src="./image/shopping_bag.png" width="28px">
+        <img src="./image/user.png" width="24px">
+    </div>
 </div>
-<div id="menu_bar">
-    <ul>
+
+<div id="nav_bar">
+    <ul id="category">
         <li><img src="./image/category.png"></li>
         <li>카테고리</li>
     </ul>
-    <ul>
+    <ul id="sale_menu">
         <li>이벤트</li>
-        <li>쿠폰/멤버십</li>                                
+        <li>특가</li>
+        <li>신상</li>
+        <li>쿠폰/멤버십</li>                           
     </ul>
-    <ul>
+    <ul id="user_menu">
 <?php
     // 로그인이 되지 않았으면 '회원가입, 로그인'
     if (!$user_id) {
@@ -38,9 +40,8 @@
         <li><a href="signup.php">회원가입</a></li>
 <?php
     } else {
-        $is_logged_in = $user_name."(".$user_id.") 님 환영합니다!";
+        $is_logged_in = $user_name."(".$user_id.") 님";
 ?>
-        <li><?=$is_logged_in?></li>
         <li><a href="login_logout.php">로그아웃</a></li>
         <li><a href="user_modify_info.php">정보수정</a></li>
 <?php
